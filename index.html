@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ahsan Khan — Computer Science student focused on Python, Data Analysis, and Machine Learning.">
+  <title>Ahsan Khan | AI & Data Portfolio</title>
+  <style>
+    :root{--bg:#080d18;--panel:rgba(17,27,48,.76);--line:rgba(157,184,225,.17);--text:#eef4ff;--muted:#a8b6ce;--cyan:#69e3ef;--violet:#a88bff;--glow:rgba(75,205,235,.16)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 82% 10%,rgba(107,83,210,.17),transparent 30%),radial-gradient(circle at 10% 45%,rgba(40,190,210,.12),transparent 28%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{font-weight:800;letter-spacing:.08em}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.navlinks a:hover,.textlink:hover{color:var(--cyan)}
+    .hero{min-height:690px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:30px;padding:60px 0 90px}.eyebrow{color:var(--cyan);font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}.hero h1{font-size:clamp(2.8rem,6vw,5.3rem);line-height:1.02;margin:18px 0}.hero h1 span{background:linear-gradient(100deg,var(--cyan),var(--violet));background-clip:text;color:transparent}.lead{max-width:640px;color:var(--muted);font-size:1.12rem}.actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:12px;font-weight:700;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(100deg,#49cddd,#8b7cf6);color:#07111d;border:0}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px var(--glow)}.orb-wrap{height:420px;display:grid;place-items:center;position:relative;perspective:900px}.orb{width:280px;height:280px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e0ffff 0 2%,#6be4ed 4%,#4773bc 28%,#25234f 63%,#10172d 75%);box-shadow:0 0 45px rgba(89,220,238,.35),inset -22px -25px 55px #080d18;position:relative;animation:float 6s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;inset:-35px;border:1px solid rgba(105,227,239,.58);border-radius:50%;transform:rotateX(68deg) rotateZ(-24deg)}.orb:after{inset:-58px;border-color:rgba(168,139,255,.55);transform:rotateX(68deg) rotateZ(35deg)}.orbit-dot{position:absolute;width:13px;height:13px;border-radius:50%;background:var(--cyan);box-shadow:0 0 20px var(--cyan);top:65px;right:60px}@keyframes float{50%{transform:translateY(-15px) rotateY(12deg)}}
+    section{padding:72px 0}.section-title{font-size:2rem;margin:0 0 8px}.section-sub{color:var(--muted);margin:0 0 28px}.glass{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px;backdrop-filter:blur(14px);box-shadow:0 18px 55px rgba(0,0,0,.18)}.about-grid,.project-grid,.link-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.about-grid p{color:var(--muted);margin:0}.chips{display:flex;flex-wrap:wrap;gap:10px}.chip{padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:#dce8fa;background:rgba(255,255,255,.035);font-size:.9rem}
+    .project{display:flex;flex-direction:column;min-height:260px}.project .tag{color:var(--cyan);font-size:.8rem;text-transform:uppercase;letter-spacing:.13em}.project h3{font-size:1.35rem;margin:9px 0}.project p{color:var(--muted);flex:1}.project .btn{align-self:flex-start}.mini{font-size:.88rem;color:var(--muted)}.resume-card{display:flex;justify-content:space-between;align-items:center;gap:20px}.resume-card h3{margin:0 0 4px}.resume-card p{margin:0;color:var(--muted)}.profile{display:flex;align-items:center;gap:14px}.profile-icon{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,rgba(105,227,239,.2),rgba(168,139,255,.2));display:grid;place-items:center;color:var(--cyan);font-weight:800}.profile p{margin:3px 0 0;color:var(--muted);font-size:.9rem}.pending{opacity:.72}.pending small{display:block;color:var(--muted);margin-top:5px}.contact{text-align:center}.contact p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.88rem;text-align:center}
+    @media(max-width:780px){.hero{grid-template-columns:1fr;padding-top:45px;min-height:auto}.orb-wrap{height:330px;grid-row:1}.orb{width:210px;height:210px}.navlinks{gap:12px;font-size:.8rem}.about-grid,.project-grid,.link-grid{grid-template-columns:1fr}.resume-card{align-items:flex-start;flex-direction:column}.nav{align-items:flex-start;gap:15px;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#home">AH<span>.</span></a>
+      <div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#connect">Connect</a></div>
+    </nav>
+
+    <main>
+      <header class="hero" id="home">
+        <div>
+          <div class="eyebrow">Computer Science Student · Pakistan</div>
+          <h1>Hi, I'm<br><span>Ahsan Khan.</span></h1>
+          <p class="lead">I’m building my skills in Python, Data Analysis, and Machine Learning — turning data into useful insights and practical AI-powered projects.</p>
+          <div class="actions">
+            <a class="btn primary" href="Ahsan_Khan_Resume.pdf" download>Download Resume ↓</a>
+            <a class="btn" href="#projects">Explore Projects ↗</a>
+          </div>
+        </div>
+        <div class="orb-wrap" aria-label="Abstract animated 3D orb"><div class="orb"></div><div class="orbit-dot"></div></div>
+      </header>
+
+      <section id="about">
+        <h2 class="section-title">About me</h2><p class="section-sub">Learning, building, and improving through practical work.</p>
+        <div class="about-grid">
+          <div class="glass"><p>I am a Computer Science student at COMSATS University Islamabad, Vehari Campus (2024–2028). My current interests include Artificial Intelligence, Machine Learning, and Data Science. I enjoy exploring datasets, building models, and developing simple applications to demonstrate what I learn.</p></div>
+          <div class="glass"><p>I'm focused on strengthening my foundations through coursework and hands-on projects. I value clear communication, continuous learning, and honest representation of my skills and experience.</p></div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="section-title">Skills & tools</h2><p class="section-sub">Technologies I have studied and used in learning projects.</p>
+        <div class="glass chips">
+          <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Scikit-learn</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Data Cleaning</span><span class="chip">Exploratory Data Analysis</span><span class="chip">Machine Learning</span><span class="chip">Streamlit</span><span class="chip">Git & GitHub</span><span class="chip">Jupyter Notebook</span>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Featured project</h2><p class="section-sub">A practical machine-learning project.</p>
+        <div class="project-grid">
+          <article class="glass project">
+            <div class="tag">Machine Learning · Regression</div>
+            <h3>AI-Powered Diamond Valuation</h3>
+            <p>A machine-learning application that estimates diamond prices from diamond characteristics. The project includes data cleaning, exploratory data analysis, feature engineering, model comparison, and a Streamlit interface.</p>
+            <div class="mini">Python · Pandas · NumPy · Scikit-learn · Streamlit</div>
+            <div class="actions">
+              <a class="btn primary" href="https://diamond-valuation-ai-omh2uoxffgk2fpjrksgvea.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a class="btn" href="https://github.com/ahsankhan2211/diamond-valuation-ai" target="_blank" rel="noopener">GitHub Repo ↗</a>
+            </div>
+          </article>
+          <article class="glass project">
+            <div class="tag">More projects</div>
+            <h3>Learning in progress</h3>
+            <p>I’m continuing to practice Python, data analysis, and machine learning. More projects will be added here as they are completed.</p>
+            <a class="btn" href="https://github.com/ahsankhan2211" target="_blank" rel="noopener">View GitHub Profile ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume">
+        <h2 class="section-title">Resume</h2><p class="section-sub">A concise overview of my education, skills, and project work.</p>
+        <div class="glass resume-card">
+          <div><h3>Ahsan Khan — Resume (PDF)</h3><p>Download my one-page resume for education, technical skills, and project details.</p></div>
+          <a class="btn primary" href="Ahsan_Khan_Resume.pdf" download>Download PDF ↓</a>
+        </div>
+      </section>
+
+      <section id="connect">
+        <h2 class="section-title">Find me online</h2><p class="section-sub">Professional profiles and project links.</p>
+        <div class="link-grid">
+          <a class="glass profile" href="https://github.com/ahsankhan2211" target="_blank" rel="noopener"><span class="profile-icon">GH</span><span><b>GitHub</b><p>Code and projects</p></span></a>
+          <a class="glass profile" href="https://www.linkedin.com/in/ahsan-khan-561b36378/" target="_blank" rel="noopener"><span class="profile-icon">in</span><span><b>LinkedIn</b><p>Professional profile</p></span></a>
+          <a class="glass profile" href="https://ahsankhan2211.github.io" target="_blank" rel="noopener"><span class="profile-icon">↗</span><span><b>Portfolio</b><p>Personal website</p></span></a>
+          <a class="glass profile" href="mailto:fa24_bcs_119@cuivehari.edu.pk"><span class="profile-icon">@</span><span><b>Email</b><p>fa24_bcs_119@cuivehari.edu.pk</p></span></a>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="section-title">Let's connect</h2>
+        <p>Interested in learning, collaboration, and suitable internship opportunities.</p>
+        <a class="btn primary" href="mailto:fa24_bcs_119@cuivehari.edu.pk">Contact me</a>
+      </section>
+    </main>
+    <footer>© 2026 Ahsan Khan · Built with HTML, CSS & JavaScript</footer>
+  </div>
+</body>
+</html>
